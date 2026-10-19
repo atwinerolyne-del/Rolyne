@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>GoodTimes Supermarket | Contact</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<style>
+    body{
+        background-color: #f77cf7;
+    }
+    .jjj{
+        background-color: #fdb32a;
+    }
+</style>
+
+<body>
+    <div class="jjj">
+
+
+<header>
+
+    <div class="logo">
+        🛒 <span>GoodTimes supermarket</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="products.html">Products</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html" class="active">
+            Contact
+        </a>
+
+    <button>
+  <img src="cart.jpeg" alt="Cart" width="30">
+  Cart
+</button>
+
+
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+</header>
+
+
+<section class="page-header">
+
+    <h1>Contact Us</h1>
+
+    <p>
+        We would love to hear from you.
+    </p>
+
+</section>
+
+
+<section class="contact-section">
+
+
+    <!-- CONTACT INFORMATION -->
+
+    <div class="contact-info">
+
+        <h2>Get In Touch</h2>
+
+        <p>
+            Have a question, suggestion or complaint?
+            Contact the FreshMart team.
+        </p>
+
+
+        <div class="contact-item">
+
+            <span></span>
+
+            <div>
+
+                <h3>Our Location</h3>
+
+                <p>
+                    Kabale Town, Uganda
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            
+
+            <div>
+
+                <h3>Phone</h3>
+
+                <p>
+                    +256 767710825/
+                    +256 781557453/
+                    +256 741407227/
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <span></span>
+
+            <div>
+
+                <h3>Email</h3>
+
+                <p>
+                    joeltumuhimbise975@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <span></span>
+
+            <div>
+
+                <h3>Opening Hours</h3>
+
+                <p>
+                    Monday - Sunday: 8:00 AM - 9:00 PM
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONTACT FORM -->
+
+    <div class="contact-form">
+
+        <h2>Send Us a Message</h2>
+
+        <form id="contactForm">
+
+            <label>
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label>
+                Email Address
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label>
+                Subject
+            </label>
+
+            <input
+                type="text"
+                id="subject"
+                placeholder="Enter subject"
+                required
+            >
+
+
+            <label>
+                Message
+            </label>
+
+            <textarea
+                id="message"
+                rows="6"
+                placeholder="Write your message..."
+                required
+            ></textarea>
+
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h2> GoodTimes supermarket</h2>
+
+            <p>
+                Quality groceries at affordable prices.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p> Kabale, Uganda</p>
+
+            <p> +256 700 000 000</p>
+
+            <p> info@goodtimes supermarket.com</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <p>
+            &copy; 2026 GoodTimes supermarket. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<div id="cart-modal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeCart()">
+            &times;
+        </span>
+
+        <h2> Shopping Cart</h2>
+
+        <div id="cart-items"></div>
+
+        <h3>
+            Total:
+            <span id="cart-total">UGX 0</span>
+        </h3>
+
+        <button>
+  <img src="cart.jpeg" alt="Cart" width="30">
+  Cart
+</button>
+
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+</div>
+
+</body>
+</html>
